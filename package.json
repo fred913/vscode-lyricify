@@ -2,7 +2,7 @@
   "name": "vscode-lyricify",
   "displayName": "Lyricify for VSCode",
   "description": "Bring Lyricify Lyrics format to Visual Studio Code.",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "engines": {
     "vscode": "^1.90.0"
   },
@@ -35,5 +35,9 @@
   "repository": {
     "url": "https://github.com/fred913/vscode-lyricify"
   },
-  "publisher": "ShengFan7855"
+  "publisher": "ShengFan7855",
+  "scripts": {
+    "pakpub": "vsce package && vsce publish"
+  },
+  "icon": "icon.png"
 }
