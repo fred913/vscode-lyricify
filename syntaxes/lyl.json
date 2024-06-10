@@ -1,18 +1,15 @@
 {
     "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-    "scopeName": "source.lyricify-syllable",
-    "name": "Lyricify Syllable",
+    "scopeName": "source.lyricify-lines",
+    "name": "Lyricify Lines",
     "fileTypes": [
-        "lys"
+        "lyl",
+        "lyrc"
     ],
     "patterns": [
         {
-            "name": "comment.line.property.lyricify",
-            "match": "^\\[\\d+\\]"
-        },
-        {
             "name": "constant.numeric.timestamp.lyricify",
-            "match": "(.+?)\\(\\d+,\\d+\\)",
+            "match": "^\\[\\d+,\\d+\\](.*)$",
             "captures": {
                 "1": {
                     "name": "string.literal.lyricify"

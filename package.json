@@ -2,7 +2,7 @@
   "name": "vscode-lyricify",
   "displayName": "Lyricify for VSCode",
   "description": "Bring Lyricify Lyrics format to Visual Studio Code.",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "engines": {
     "vscode": "^1.90.0"
   },
@@ -12,23 +12,37 @@
   "contributes": {
     "languages": [
       {
-        "id": "lyricify",
+        "id": "lyricify-syllable",
         "aliases": [
-          "Lyricify Syllable",
-          "lyricify"
+          "Lyricify Syllable"
         ],
         "extensions": [
-          ".lys",
-          ".lyr"
+          ".lys"
         ],
         "configuration": "./lang-cfg-lys.json"
+      },
+      {
+        "id": "lyricify-lines",
+        "aliases": [
+          "Lyricify Lines"
+        ],
+        "extensions": [
+          ".lyl",
+          ".lyrc"
+        ],
+        "configuration": "./lang-cfg-lyl.json"
       }
     ],
     "grammars": [
       {
-        "language": "lyricify",
-        "scopeName": "source.lyricify",
+        "language": "lyricify-syllable",
+        "scopeName": "source.lyricify-syllable",
         "path": "./syntaxes/lys.json"
+      },
+      {
+        "language": "lyricify-lines",
+        "scopeName": "source.lyricify-lines",
+        "path": "./syntaxes/lyl.json"
       }
     ]
   },

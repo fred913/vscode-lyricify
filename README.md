@@ -3,4 +3,5 @@
 This is a stupid VS Code extension that provides syntax highlighting for Lyricify lyrics files.
 
 ## Supported File Types
-- Lyricify Syllables (.lys or .lyr)
+- Lyricify Syllables (.lys)
+- Lyricify Lines (.lyl or .lyrc)
