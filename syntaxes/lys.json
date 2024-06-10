@@ -1,0 +1,45 @@
+{
+    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "scopeName": "source.lyricify",
+    "name": "Lyricify Syllable",
+    "fileTypes": [
+        "lys",
+        "lyr"
+    ],
+    "patterns": [
+        {
+            "name": "comment.line.property.lyricify",
+            "match": "^\\[\\d+\\]"
+        },
+        {
+            "name": "constant.numeric.timestamp.lyricify",
+            "match": "(.+?)\\(\\d+,\\d+\\)",
+            "captures": {
+                "1": {
+                    "name": "string.literal.lyricify"
+                }
+            }
+        },
+        {
+            "match": "(\\[)([a-zA-Z].*)(:)(.*)(\\])",
+            "captures": {
+                "1": {
+                    "name": "punctuation.definition.meta.lyric"
+                },
+                "2": {
+                    "name": "entity.name.function.lyric"
+                },
+                "3": {
+                    "name": "punctuation.definition.split.lyric"
+                },
+                "4": {
+                    "name": "support.type.property-name"
+                },
+                "5": {
+                    "name": "punctuation.definition.meta.lyric"
+                }
+            }
+        }
+
+    ]
+}
