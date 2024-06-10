@@ -31,5 +31,8 @@
         "path": "./syntaxes/lys.json"
       }
     ]
+  },
+  "repository": {
+    "url": "https://github.com/fred913/vscode-lyricify"
   }
 }
