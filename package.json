@@ -31,6 +31,18 @@
           ".lyrc"
         ],
         "configuration": "./lang-cfg-lyl.json"
+      },
+      {
+        "id": "lyricify-qrc",
+        "aliases": [
+          "QRC (Lyricify Standards)"
+        ],
+        "extensions": [
+          ".qrc",
+          ".lqrc",
+          ".lyqrc"
+        ],
+        "configuration": "./lang-cfg-qrc.json"
       }
     ],
     "grammars": [
@@ -43,6 +55,11 @@
         "language": "lyricify-lines",
         "scopeName": "source.lyricify-lines",
         "path": "./syntaxes/lyl.json"
+      },
+      {
+        "language": "lyricify-qrc",
+        "scopeName": "source.lyricify-qrc",
+        "path": "./syntaxes/qrc.json"
       }
     ]
   },

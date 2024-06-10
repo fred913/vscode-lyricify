@@ -8,11 +8,11 @@
     ],
     "patterns": [
         {
-            "name": "constant.numeric.timestamp.lyricify",
+            "name": "constant.numeric.timestamp.lyricify-lines",
             "match": "^\\[\\d+,\\d+\\](.*)$",
             "captures": {
                 "1": {
-                    "name": "string.literal.lyricify"
+                    "name": "string.literal.lyricify-lines"
                 }
             }
         },
@@ -20,19 +20,19 @@
             "match": "(\\[)([a-zA-Z].*)(:)(.*)(\\])",
             "captures": {
                 "1": {
-                    "name": "punctuation.definition.meta.lyric"
+                    "name": "punctuation.definition.meta.lyricify-lines"
                 },
                 "2": {
-                    "name": "entity.name.function.lyric"
+                    "name": "entity.name.function.lyricify-lines"
                 },
                 "3": {
-                    "name": "punctuation.definition.split.lyric"
+                    "name": "punctuation.definition.split.lyricify-lines"
                 },
                 "4": {
-                    "name": "support.type.property-name"
+                    "name": "support.type.property-name.lyricify-qrc"
                 },
                 "5": {
-                    "name": "punctuation.definition.meta.lyric"
+                    "name": "punctuation.definition.meta.lyricify-lines"
                 }
             }
         }

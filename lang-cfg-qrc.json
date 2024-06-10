@@ -1,6 +1,6 @@
 {
     "comments": {
-        // surprise! Lyricify Lines didn't support comments at all!
+        // surprise! QRC (Lyricify Standards) didn't support comments at all!
     },
     // symbols used as brackets
     "brackets": [

@@ -1,21 +1,23 @@
 {
     "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-    "scopeName": "source.lyricify-syllable",
-    "name": "Lyricify Syllable",
+    "scopeName": "source.lyricify-qrc",
     "fileTypes": [
-        "lys"
+        "qrc",
+        "lqrc",
+        "lyqrc"
     ],
+    "name": "QRC (Lyricify Standards)",
     "patterns": [
         {
-            "name": "comment.line.property.lyricify-syllable",
-            "match": "^\\[\\d+\\]"
+            "name": "constant.numeric.timestamp-line.lyricify-qrc",
+            "match": "^\\[(\\d+),(\\d+)\\]"
         },
         {
-            "name": "constant.numeric.timestamp.lyricify-syllable",
+            "name": "constant.numeric.timestamp-word.lyricify-qrc",
             "match": "(.+?)\\(\\d+,\\d+\\)",
             "captures": {
                 "1": {
-                    "name": "string.literal.lyricify-syllable"
+                    "name": "string.literal.lyricify-qrc"
                 }
             }
         },
@@ -23,19 +25,19 @@
             "match": "(\\[)([a-zA-Z].*)(:)(.*)(\\])",
             "captures": {
                 "1": {
-                    "name": "punctuation.definition.meta.lyricify-syllable"
+                    "name": "punctuation.definition.meta.lyricify-qrc"
                 },
                 "2": {
-                    "name": "entity.name.function.lyricify-syllable"
+                    "name": "entity.name.function.lyricify-qrc"
                 },
                 "3": {
-                    "name": "punctuation.definition.split.lyricify-syllable"
+                    "name": "punctuation.definition.split.lyricify-qrc"
                 },
                 "4": {
                     "name": "support.type.property-name.lyricify-qrc"
                 },
                 "5": {
-                    "name": "punctuation.definition.meta.lyricify-syllable"
+                    "name": "punctuation.definition.meta.lyricify-qrc"
                 }
             }
         }
