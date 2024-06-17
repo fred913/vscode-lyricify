@@ -2,7 +2,7 @@
   "name": "vscode-lyricify",
   "displayName": "Lyricify Highlighter",
   "description": "Bring Lyricify Lyrics format to Visual Studio Code.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "engines": {
     "vscode": "^1.89.0"
   },
