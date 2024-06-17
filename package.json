@@ -4,7 +4,7 @@
   "description": "Bring Lyricify Lyrics format to Visual Studio Code.",
   "version": "0.1.0",
   "engines": {
-    "vscode": "^1.90.0"
+    "vscode": "^1.89.0"
   },
   "categories": [
     "Programming Languages"
